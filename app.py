@@ -7,27 +7,7 @@ from dash.dependencies import Input, Output
 
 from plotly import graph_objs as go
 import plotly.express as px
-df = pd.read_csv("C:/Users/Drishya/list_to_be_checked.csv")
-# Iris bar figure
-'''def drawFigure():
-    return  html.Div([
-        dbc.Card(
-            dbc.CardBody([
-                dcc.Graph(
-                    figure=px.bar(
-                        df, x="sepal_width", y="sepal_length", color="species"
-                    ).update_layout(
-                        template='plotly_dark',
-                        plot_bgcolor= 'rgba(0, 0, 0, 0)',
-                        paper_bgcolor= 'rgba(0, 0, 0, 0)',
-                    ),
-                    config={
-                        'displayModeBar': False
-                    }
-                ) 
-            ])
-        ),  
-    ])'''
+df = pd.read_csv("list_to_be_checked.csv")
 
 def drawFigure():
     return    html.Div(

@@ -141,4 +141,4 @@ def update_pie_chart(select_d1):
 
 
 # Run app and display result inline in the notebook
-app.run_server()
+app.run_server(debug=True)

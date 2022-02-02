@@ -118,4 +118,4 @@ def update_pie_chart(select_d1):
 
 
 # Run app and display result inline in the notebook
-app.run_server(port=8052)
+app.run_server(debug=app.config['DEBUG'], port=app.config['PORT'])
